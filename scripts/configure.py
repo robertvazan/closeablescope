@@ -17,5 +17,6 @@ has_website = lambda: False
 
 def dependencies():
     use_junit()
+    use_hamcrest()
 
 generate()
