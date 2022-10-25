@@ -7,14 +7,14 @@
 [![Build status](https://github.com/robertvazan/closeablescope/workflows/build/badge.svg)](https://github.com/robertvazan/closeablescope/actions/workflows/build.yml)
 [![Test coverage](https://codecov.io/gh/robertvazan/closeablescope/branch/master/graph/badge.svg)](https://codecov.io/gh/robertvazan/closeablescope)
 
-CloseableScope is a tiny Java library that implements single interface CloseableScope, which is an unchecked version of
+CloseableScope is a tiny Java library that implements single interface [`CloseableScope`](https://closeablescope.machinezoo.com/javadoc/com.machinezoo.closeablescope/com/machinezoo/closeablescope/CloseableScope.html), which is an unchecked version of
 [`AutoCloseable`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AutoCloseable.html).
 
 More on [homepage](https://closeablescope.machinezoo.com/).
 
 ## Status
 
-Experimental.
+Stable and maintained.
 
 ## Getting started
 
