@@ -13,7 +13,6 @@ pretty_name = lambda: 'CloseableScope'
 pom_description = lambda: 'Unchecked version of AutoCloseable.'
 inception_year = lambda: 2022
 jdk_version = lambda: 11
-has_website = lambda: False
 
 def dependencies():
     use_junit()
