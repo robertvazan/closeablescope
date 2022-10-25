@@ -19,6 +19,7 @@ import java.util.*;
  * 
  * @see <a href="https://closeablescope.machinezoo.com/">CloseableScope tutorial</a>
  */
+@FunctionalInterface
 public interface CloseableScope extends AutoCloseable {
 	/**
 	 * Closes this scope or other closeable resource.
