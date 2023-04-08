@@ -1,22 +1,19 @@
 # This script generates and updates project configuration files.
 
-# We are assuming that project-config is available in sibling directory.
-# Checkout from https://github.com/robertvazan/project-config
-import pathlib
-project_directory = lambda: pathlib.Path(__file__).parent.parent
-config_directory = lambda: project_directory().parent/'project-config'
-exec((config_directory()/'src'/'java.py').read_text())
+# Run this script with rvscaffold in PYTHONPATH
+import rvscaffold as scaffold
 
-project_script_path = __file__
-repository_name = lambda: 'closeablescope'
-pretty_name = lambda: 'CloseableScope'
-pom_description = lambda: 'Unchecked version of AutoCloseable.'
-inception_year = lambda: 2022
-jdk_version = lambda: 11
-project_status = lambda: stable_status()
+class Project(scaffold.Java):
+    def script_path_text(self): return __file__
+    def repository_name(self): return 'closeablescope'
+    def pretty_name(self): return 'CloseableScope'
+    def pom_description(self): return 'Unchecked version of AutoCloseable.'
+    def inception_year(self): return 2022
+    def project_status(self): return self.stable_status()
+    
+    def dependencies(self):
+        yield from super().dependencies()
+        yield self.use_junit()
+        yield self.use_hamcrest()
 
-def dependencies():
-    use_junit()
-    use_hamcrest()
-
-generate()
+Project().generate()
