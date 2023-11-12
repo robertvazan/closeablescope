@@ -3,7 +3,7 @@
 
 # CloseableScope
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.machinezoo.closeablescope/closeablescope)](https://search.maven.org/artifact/com.machinezoo.closeablescope/closeablescope)
+[![Maven Central](https://img.shields.io/maven-central/v/com.machinezoo.closeablescope/closeablescope)](https://central.sonatype.com/artifact/com.machinezoo.closeablescope/closeablescope)
 [![Build status](https://github.com/robertvazan/closeablescope/workflows/build/badge.svg)](https://github.com/robertvazan/closeablescope/actions/workflows/build.yml)
 [![Test coverage](https://codecov.io/gh/robertvazan/closeablescope/branch/master/graph/badge.svg)](https://codecov.io/gh/robertvazan/closeablescope)
 
